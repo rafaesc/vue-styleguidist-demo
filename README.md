@@ -1,20 +1,20 @@
-# y
+# example
 
-> A Vue.js component module
+> A Vue.js component module with vue-styleguidist
 
 # Usage
 
-    <y text="Hello World!"></y>
+    <example text="Hello World!"></example>
 
 ## Installation
 
 ### Using yarn
 
-`yarn add y`
+`yarn install`
 
 ### Using npm
 
-`npm i --save y`
+`npm install`
 
 ## Demo and Docs
 
