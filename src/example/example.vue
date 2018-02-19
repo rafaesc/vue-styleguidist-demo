@@ -11,12 +11,18 @@ export default {
   name: 'example',
   props: {
     /**
-     * The component text
+     * Number of columns (1-12) the column should span.
      */
-    text: {
-      type: String,
-      default: '',
-      required: true
+    span: {
+      type: [String, Number],
+    },
+    /** Sm breakpoint and above */
+    spanSm: {
+      type: [String, Number],
+    },
+    /** Md breakpoint and above */
+    spanMd: {
+      type: [String, Number],
     },
   },
 }
