@@ -1,35 +1,29 @@
 {
-  "name": "example",
-  "version": "0.0.1",
-  "description": "A Vue.js component module",
-  "author": "rafaesc <rafaesc92@gmail.com>",
-  "main": "dist/index.js",
-  "license": "MIT",
-  "scripts": {
-    "lint": "eslint src",
-    "build": "vue build ./src/index.js --config ./build.config.js --dist ./dist/ --prod --lib",
-    "build:doc": "vue-styleguidist build",
-    "serve": "vue-styleguidist server"
+  "name": "vue-styleguidist-example-basic",
+  "description": "Vue styleguidist basic example",
+  "version": "1.7.3",
+  "private": true,
+  "homepage": "https://github.com/vue-styleguidist/vue-styleguidist",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/styleguidist/vue-styleguidist.git"
   },
-  "keywords": [
-    "vue",
-    "component"
-  ],
-  "files": [
-    "dist/"
-  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=4"
+  },
   "dependencies": {
-    "v-media-query": "^1.0.3",
-    "vue": "^2.4.1",
-    "vue-js-modal": "^1.3.0"
+    "dog-names": "^1.0.2",
+    "vue-styleguidist": "1.7.3"
+  },
+  "scripts": {
+    "styleguide": "vue-styleguidist server",
+    "styleguide:build": "vue-styleguidist build"
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
-    "eslint": "^3.17.1",
-    "eslint-plugin-vue": "beta",
-    "vue-cli": "^2.8.2",
-    "vue-styleguidist": "^1.2.5",
-    "vue-webpack-loaders": "^1.0.6",
-    "webpack": "^3.1.0"
+    "css-loader": "^0.28.7",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.10.0"
   }
 }
